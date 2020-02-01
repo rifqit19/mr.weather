@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailNextDay"
+    android:id="@+id/linBackD"
+    android:orientation="vertical"
+    android:background="@drawable/heavy_rain_bb">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:contentInsetStart="10dp"
+        android:layout_marginTop="23dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/marydale_bold"
+                android:text="Next Day"
+                android:textColor="#FFFF"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tanggalD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_neu_bold"
+                android:textAlignment="center"
+                android:textColor="@color/putih"
+                android:textSize="18sp"
+                android:text="-"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_putih"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/image_weatherD"
+                            android:layout_width="250dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/logoo"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/temperatureD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/marydale_bold"
+                            android:textSize="35sp"
+                            android:maxLength="2"
+                            android:textColor="@color/biru2"
+                            />
+                        <TextView
+                            android:layout_toRightOf="@id/temperatureD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/marydale_bold"
+                            android:textSize="35sp"
+                            android:text="°C"
+                            android:maxLength="2"
+                            android:textColor="@color/biru2"
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/weather_statD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/helvetica_neu_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/biru2"
+                        android:textSize="18sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:textColor="@color/putih"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_putih"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wind speed:"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:textColor="@color/biru2"/>
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="1px"
+                        android:background="@color/biru2"
+                        android:layout_margin="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/windSpeedD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="-"
+                            android:maxLength="4"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:textColor="@color/biru2"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text=" mph"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:textColor="@color/biru2"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Air pressure:"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:textColor="@color/biru2"/>
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="1px"
+                        android:background="@color/biru2"
+                        android:layout_margin="5dp"/>
+
+                    <TextView
+                        android:id="@+id/airPressureD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:maxLength="4"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:textColor="@color/biru2"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear6"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Humidity:"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:textColor="@color/biru2"/>
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="1px"
+                        android:background="@color/biru2"
+                        android:layout_margin="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/huidityD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:maxLength="3"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:textColor="@color/biru2"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="%"
+                            android:textAlignment="center"
+                            android:maxLength="4"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:textColor="@color/biru2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_putih"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:padding="15dp"
+                android:layout_marginBottom="20dp">
+
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Max Temp:"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:textColor="@color/biru2"/>
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="1px"
+                        android:background="@color/biru2"
+                        android:layout_margin="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/maxTempD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:maxLength="2"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:textColor="@color/biru2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:text="°C"
+                            android:textAlignment="center"
+                            android:maxLength="2"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:textColor="@color/biru2"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Temp:"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:textColor="@color/biru2"/>
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="1px"
+                        android:background="@color/biru2"
+                        android:layout_margin="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/theTempD"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:maxLength="2"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:textColor="@color/biru2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:text="°C"
+                            android:textAlignment="center"
+                            android:maxLength="2"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:textColor="@color/biru2"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Min Temp:"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/helveticaneue_medium"
+                        android:textColor="@color/biru2"/>
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="1px"
+                        android:background="@color/biru2"
+                        android:layout_margin="5dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/minTempD"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:textAlignment="center"
+                            android:text="-"
+                            android:maxLength="2"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:textColor="@color/biru2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:text="°C"
+                            android:textAlignment="center"
+                            android:maxLength="2"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:textColor="@color/biru2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

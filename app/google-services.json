@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "460295421774",
+    "firebase_url": "https://mrweather-ee6fa.firebaseio.com",
+    "project_id": "mrweather-ee6fa",
+    "storage_bucket": "mrweather-ee6fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460295421774:android:2e8f7dacd54836ad",
+        "android_client_info": {
+          "package_name": "com.rifqi3g.cuaca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460295421774-b8lon10uoena1gke6r0ms8noqqs9dju2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7iueseuDpUeZwtMa8miEPE2HCcKJSUCM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
